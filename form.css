@@ -87,7 +87,8 @@ input{
 }
 
 .label-float input:not(.invalid):hover {
-  border-color: black;}
+  border-color: black; 
+}
 
   .label-float input{
   border: 1px solid lightgrey;
@@ -103,11 +104,12 @@ input{
   margin: 0 auto;
 
 }
-  .label-float input:focus{
+.label-float input:focus{
   border: 2px solid  #3951b2;
   background-color: white;}
 
-  .label-float input::placeholder{
+.label-float input::placeholder{
+  text-align: center;
   color:transparent;}
 
 .label-float label{
@@ -120,7 +122,8 @@ input{
   -webkit-transition: all .1s linear;
   -moz-transition: all .1s linear;
   background-color:white;
-  padding: 5px;
+  padding: 10px;
+
   box-sizing: border-box;
 }
 
