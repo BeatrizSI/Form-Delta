@@ -1,6 +1,5 @@
 body{
-    font-family: sans-serif;
-    font-family: Verdana,Tahoma,sans-serif;
+    font-family: Geomanist,sans-serif;
     font-size: 13px;
     background-color: #fafafa;
     max-width: 760px;
@@ -14,21 +13,31 @@ h1{
 h4{
     color: #3d4459;
 }
+h3{
+    color: rgba(0,0,0,.87);
+    font-size: 14px;
+    font-family: Geomanist,sans-serif;
+}
+label{
+    color: gray;
+}
 section{
     text-align: center;
 }
-  /*div.container{
+div.container{
     background-color: #ffffff;
-}*/
+}
 .error{
     opacity: 0 ;
     color: red;
-    line-height: 1cm;
+    line-height: 0.1cm;
     text-align: left;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     top: 0;
+    text-align: left;
+    text-indent: 9em;
 }
 span{
     text-align: left;
@@ -54,7 +63,7 @@ input{
   
 .button {
     background-color: #3951b2;
-    height: 40px;
+   
     width: 450px;
     border-spacing: 5px;
     padding: 10px;
@@ -110,8 +119,8 @@ input{
 .label-float label{
     pointer-events: none;
     position: absolute;
-    padding-top: -50px 20px;
-    top: calc(50% - 20px);
+    padding-top: -40px;
+    top: calc(50% - 0px);
     left: 20px;
     text-indent: 9em;
     font-size: 15px;
@@ -154,7 +163,7 @@ input{
   }
  
   .form-dropdown {
-    min-width: 100%;
+    min-width: 61%;
     padding: 10px 15px;
     border-radius: 7px;
     border: 0 solid #ffffff;
@@ -174,3 +183,41 @@ input{
     font-size: 15px;
     
   }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+  .stv-radio-buttons-wrapper {
+    clear: both;
+    display: inline-block;
+  }
+  
+  .stv-radio-button {
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+  }
+.stv-radio-button + label {
+      float: left;
+      padding: .5em 1em;
+      cursor: pointer;
+      border: 1px solid #28608f;
+      margin-right: -1px;
+      color: black;
+      background-color: white;
+}
+      .stv-radio-button:first-of-type {
+        border-radius: .7em 0 0 .7em;
+      }
+      
+      .stv-radio-button:last-of-type {
+        border-radius: 0 .7em .7em 0;
+      }
+    
+    
+      .stv-radio-button:checked + label {
+      background-color: lightgrey;
+    }
+  
