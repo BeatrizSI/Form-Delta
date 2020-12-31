@@ -18,7 +18,7 @@
         <h1>XXXX, agora nos informe alguns detalhes sobre seu financiamento:</h1>
         <p><h4>Entradas de 30% sobre o valor total do veículo aumentam as chances de aprovação do financiamento.</h4></p>
         <form>
-            <div class="label-float">
+            <div class="label-float invalid">
                 <input type="text" id= "valorT"  placeholder=" "/>
                 <label>Valor Total do Veiculo</label>
                 <div class="error">
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <br>
-            <div class="label-float ">
+            <div class="label-float invalid">
                 <input type="text" id= "entrada" placeholder=" " />
                 <label>Valor de Entrada</label>
                 <div class="error">
@@ -34,16 +34,17 @@
                   </div>
             </div>
              <br>
-             <div class="label-float">
-              
-              <select id="dropdown" name="best-option" class="form-dropdown" placeholder="O que deseja financiar?">
-        
-                <option value="select" disabled selected > O que deseja financiar? </option>
+             <div class="label-float invalid">
+             
+              <select id="dropdown" name="best-option" class="form-dropdown" placeholder=" ">
+                
+                <option value="select" disabled selected >  </option>
                 <option value="carro"> Carro </option>
                 <option value="moto"> Moto </option>
                 <option value="utilitário"> Utilitário </option>
                 <option value="caminhão"> Caminhão</option>
               </select>
+              <label> O que deseja financiar? </label>
             </div>
 
                 <div class="error">
@@ -58,9 +59,12 @@
             <input type="radio" class="stv-radio-button" name="radioButtonTest" value="2" id="button2" />
             <label for="button2">Depois de 2010</label>
           </div>
+          <div class="error">
+            <span> OBRIGATÓRIO! </span>
+          </div>
           <br>
           <br>
-           <input type="submit" class="proximo button" onclick="verificarInputs(event);" value="PRÓXIMO" />
+           <input type="submit" class="button" onclick="verificarCampos(event);" value="PRÓXIMO" />
         </form>
       </div>
     </section> 

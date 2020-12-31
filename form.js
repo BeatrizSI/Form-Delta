@@ -21,6 +21,23 @@ function verificarInputs(event) {
     }
    
  }; 
+ 
+ function verificarCampos(event) {
+    var inputs = $('#valorT #entrada #dropdown');
+    event.stopPropagation(); 
+    event.preventDefault();
+    
+    //console.log(inputs);
+    if (!inputs.val()){
+        inputs.addClass('invalid');
+        $('.error').addClass('active');
+       
+    } else{
+        onSubmit();
+        $('.error').removeClass("active");
+    }
+   
+ };  
 
 // Habilite, ou não, o <button>, dependendo da variável:
    // $('button').prop('disabled', !preenchidos); // 

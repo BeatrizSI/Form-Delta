@@ -84,6 +84,7 @@ input{
 .label-float{
   position: relative;
   padding-top: 13px;
+  margin-top: 20px;
 }
 
 .label-float input:not(.invalid):hover {
