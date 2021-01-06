@@ -2,8 +2,8 @@ body{
     font-family: Geomanist,sans-serif;
     font-size: 13px;
     background-color: #fafafa;
-    max-width: 760px;
-    margin-left: 350px;
+    width: 700px;
+    margin-left: 300px;
     float: center;
 }
 h1{
@@ -31,13 +31,12 @@ div.container{
     opacity: 0 ;
     color: red;
     line-height: 0.1cm;
-    text-align: left;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     top: 0;
     text-align: left;
-    text-indent: 9em;
+    text-indent: 6em;
 }
 span{
     text-align: left;
@@ -146,7 +145,6 @@ input{
 .label-float .invalid + label:before{
     color: red;
 }
-  
 .label-float input:focus + label{
     font-size: 13px;
     top: 0;
